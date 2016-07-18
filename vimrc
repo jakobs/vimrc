@@ -14,6 +14,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-sensible'
 Plugin 'scrooloose/nerdtree'
+Plugin 'Valloric/YouCompleteMe'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -21,6 +22,8 @@ filetype plugin indent on    " required
 
 " Configuration section
 let g:airline_section_z = airline#section#create(['sw:%{&shiftwidth}'])
+
+let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'  
 
 syntax enable
 set background=dark
