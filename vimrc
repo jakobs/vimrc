@@ -15,6 +15,7 @@ Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-sensible'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'derekwyatt/vim-fswitch'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -33,3 +34,4 @@ set hidden
 let mapleader = ","
 nnoremap <leader>b :b#<cr>
 nnoremap <leader>n :NERDTreeToggle<cr>
+nnoremap <leader>f :FSHere<cr>
