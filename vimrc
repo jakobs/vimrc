@@ -36,3 +36,6 @@ let mapleader = ","
 nnoremap <leader>b :b#<cr>
 nnoremap <leader>n :NERDTreeToggle<cr>
 nnoremap <leader>f :FSHere<cr>
+nnoremap <leader>g :YcmCompleter GoTo<CR>
+nnoremap <leader>m :make -C build<CR>
+nnoremap <leader>e :cn<CR>
