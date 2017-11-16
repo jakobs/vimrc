@@ -15,13 +15,15 @@ Plugin 'VundleVim/Vundle.vim'
 " Load Plugins
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-sleuth'
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'flazz/vim-colorschemes'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-sensible'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'rdnetto/YCM-Generator'
 Plugin 'derekwyatt/vim-fswitch'
+Plugin 'leafgarland/typescript-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -34,7 +36,8 @@ let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 
 syntax enable
 set background=dark
-colorscheme solarized
+set t_Co=256
+colorscheme molokai
 
 set hidden
 let mapleader = ","
