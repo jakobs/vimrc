@@ -50,5 +50,6 @@ nnoremap <leader>f :FSHere<cr>
 nnoremap <leader>g :YcmCompleter GoTo<CR>
 nnoremap <leader>m :make -C build<CR>
 nnoremap <leader>e :cn<CR>
+nnoremap <PageDown> :e<CR> G
 
 map ,e :e <C-R>=expand("%:p:h") . "/" <CR>
