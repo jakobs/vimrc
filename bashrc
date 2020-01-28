@@ -26,7 +26,26 @@ trap 'preexec' DEBUG
 # fix byobu freezes
 stty ixany
 
-export GIT_AUTHOR_NAME="Jakob Schwendner"
-export GIT_AUTHOR_EMAIL="jschwendner@krakenrobotik.de"
-export GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
-export GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
+function identity()
+{
+    # run an ssh-agent and add identity
+    eval `ssh-agent`
+    ssh-add
+
+    # define git environment variables
+    export GIT_AUTHOR_NAME="Jakob Schwendner"
+    export GIT_AUTHOR_EMAIL="jschwendner@krakenrobotik.de"
+    export GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
+    export GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
+}
+
+function sshf()
+{
+    if [ -z "$SSH_AGENT_PID" ]; then
+        # add the identity
+        identity
+    fi
+
+    DISPLAY=${DISPLAY:localhost:0.0} ssh -X -A $@
+}
+
