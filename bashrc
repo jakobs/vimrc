@@ -46,6 +46,6 @@ function sshf()
         identity
     fi
 
-    DISPLAY=${DISPLAY:localhost:0.0} ssh -X -A $@
+    DISPLAY=${DISPLAY:-localhost:0.0} ssh -X -A $@
 }
 
