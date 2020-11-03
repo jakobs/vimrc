@@ -18,7 +18,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-sensible'
 Plug 'scrooloose/nerdtree'
-Plug 'Valloric/YouCompleteMe'
+Plug 'Valloric/YouCompleteMe', { 'commit':'d98f896' }
 Plug 'derekwyatt/vim-fswitch'
 Plug 'leafgarland/typescript-vim'
 Plug 'morhetz/gruvbox'
