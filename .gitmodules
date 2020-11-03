@@ -1,9 +1,0 @@
-[submodule "bundle/Vundle.vim"]
-	path = bundle/Vundle.vim
-	url = https://github.com/VundleVim/Vundle.vim
-[submodule "term/gnome-terminal-colors-solarized"]
-	path = term/gnome-terminal-colors-solarized
-	url = https://github.com/Anthony25/gnome-terminal-colors-solarized.git
-[submodule "term/dircolors-solarized"]
-	path = term/dircolors-solarized
-	url = https://github.com/seebi/dircolors-solarized.git
