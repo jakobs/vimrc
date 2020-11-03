@@ -32,12 +32,12 @@ call plug#end()              " required
 filetype plugin indent on    " required
 
 " Configuration section
-let g:airline_section_z = airline#section#create(['sw:%{&shiftwidth}'])
+silent! let g:airline_section_z = airline#section#create(['sw:%{&shiftwidth}'])
 
 syntax enable
 set background=dark
 set t_Co=256
-colorscheme gruvbox
+silent! colorscheme gruvbox
 
 set hidden
 let mapleader = ","
